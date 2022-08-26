@@ -1,0 +1,71 @@
+{
+  "name": "smasoso-company",
+  "description": "smasoso-company templete",
+  "main": "index.js",
+  "authors": [
+    "Ahmad Al Bashir Barakat"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "owl.carousel": "OwlCarousel2#^2.3.4",
+    "popper.js": "^1.14.7",
+    "parallax.js": "^1.5.0",
+    "leaflet": "^1.4.0",
+    "leaflet-fullscreen": "^1.0.2",
+    "fontAwesome": "fontawesome#^5.8.1"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "/": [
+        "dist/**/bootstrap.css",
+        "dist/**/bootstrap.js"
+      ]
+    },
+    "jquery": {
+      "/": "dist/**/jquery.js"
+    },
+    "popper.js": {
+      "/": "dist/**/popper.js"
+    },
+    "parallax.js": {
+      "/": "parallax.js"
+    },
+    "owl.carousel": {
+      "/": [
+        "dist/**/owl.carousel.css",
+        "dist/**/owl.carousel.js",
+        "dist/**/*.png",
+        "dist/**/*.gif"
+      ]
+    },
+    "leaflet": {
+      "/": [
+        "dist/**/leaflet.css",
+        "dist/**/leaflet.js"
+      ],
+      "images": "dist/images"
+    },
+    "leaflet-fullscreen": {
+      "/": [
+        "dist/**/leaflet.fullscreen.css",
+        "dist/**/leaflet.fullscreen.js",
+        "dist/**/*.png"
+      ]
+    },
+    "*": {
+      "js": "dist/**/*.js",
+      "css": "dist/**/*.css"
+    }
+  }
+}
